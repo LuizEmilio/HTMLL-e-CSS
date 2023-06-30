@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Nome completo: <br> <input type="text" placeholder="Digite o seu nome completo"> <br>
+        Telefone: <br> <input type="text" maxlength="11" name="telefone"> <br>
+        Profissão: <br> <input type="text" size="20" name="profissao"> <br>
+    </form>
+    <br>
+    <hr>
+    <form>
+        Login: <input type="text" name="login"> <br>
+        <br>
+        Senha: <input type="password" name="senha"> <br>
+    </form>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    <form action="#" method="">  <!-- para o 'method'= 'get' ou 'post' -->
+        Nome: <br> <input type="text" name="nome" size="30" placeholder="Digite o seu nome aqui"> <br>
+        Sobrenome: <br> <input type="text" name="sobrenome" placeholder="Informe o seu sobrenome"> <br>
+        Endereço: <br> <input type="text" name="endereço" size="60"> <br>
+        Senha: <br> <input type="password" name="senha" maxlength="8" required> <br>
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+    <hr>
+    <form>
+        <fieldset>
+        <legend> Genero: </legend>
+            <input type="radio" name="genero" value="M"> Masculino
+            <input type="radio" name="genero" value="F">Feminino
+            <input type="radio" name="genero" value="O" checked>Outro
+        </fieldset>
+        <fieldset>
+        <legend> Estado civil:</legend>
+            <input type="radio" name="estCivil" value="C">Casado
+            <input type="radio" name="estCivil" value="S" checked>Solteiro
+            <input type="radio" name="estCivil" value="V">Viúvo
+            <input type="radio" name="estCivil" value="D">Divorciado
+            <input type="radio" name="estCivil" value="A">Amasiado
+            <input type="radio" name="estCivil" value="O">Outro
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>Linguagens:</legend>
+            <input type="checkbox" name="linguagens" id="lin01" value="C#"> C#
+            <input type="checkbox" name="linguagens" id="lin02" value="Java"> Java
+            <input type="checkbox" name="linguagens" id="lin03" value="SQL"> SQL
+            <input type="checkbox" name="linguagens" id="lin04" value="PHP"> PHP
+            <input type="checkbox" name="linguagens" id="lin05" value="JavaScript"> JavaScript
+            <input type="checkbox" name="linguagens" id="lin06" value="HTML"> HTML
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <form>
+        Estados <select name="estado"> <br>            
+            <optgroup label="SUL">
+                <option>PR
+                <option>SC
+                <option>RS
+            </optgroup>
+            <optgroup label="SUDESTE">
+                <option>SP
+                <option>RJ
+                <option>MG
+                <option>ES
+            </optgroup>
+        </select>
+        <textarea name="comentarios" cols="50" rows="2">
+            coloque seus comentarios
+        </textarea>
+        <br>
+        Idade: <input type="number"> <br>
+        Data Nascimento: <input type="date"> <br>
+        <br>
+
+        Cidades: <input type="text" list="cidades">
+            <datalist id="cidades">
+                <option>Parana
+                <option>Santa Catarina
+                <option>Rio Grande do SUL
+            </datalist>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+
+<!-- 'placeholder' mantem algo no espaço como um exemplo -->
+<!-- 'get' manda as informações visiveis -->
+<!-- 'post' manda elas invisiveis -->
+<!-- Se colocar o 'name' igual para todos só e possivel escolher uma unica opção -->
+<!-- Opção 'checked' coloca como padrão uma escolha marcada -->

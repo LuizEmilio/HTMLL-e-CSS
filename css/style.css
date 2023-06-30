@@ -1,0 +1,58 @@
+*{                                    /* "*" representa tudo*/
+    margin: 0;                        /*distancia externa*/
+    padding: 0;                       /*distancia interna*/
+}
+body{                                 /*corpo*/
+    background: #828282;            /*cor,imagem,alterar fundo*/
+}
+nav{                                  
+    margin: 150px auto;
+    width: 450px;                     /*largura*/
+    height: 450;                      /*altura*/
+}
+#check{
+    display: none;                    
+}
+
+#central{
+    cursor: pointer;                  /*muda o seta pra a maozinha*/
+    width: 150px;
+    height: 150px;
+    position: absolute;               /*posicao*/
+    margin: 150px 150px;
+    z-index: 1;                       /*sobrepor*/
+}
+
+#central img{
+    width: 100%;                       /* % significa o tamanho*/
+    border-radius: 50%;                /* significa o arredondamento*/
+    transition: all .5s linear;        /*velocidade do botao*/
+}
+.link{
+    position: absolute;
+    margin: 195px 195px;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    transition: all .5s linear;         /*velocidade do botao*/
+}
+#check:checked ~ a #link_01{
+    transform: translateY(-195px);      /* Y significa vertical*/
+    transition: all .5s linear;         /*velocidade do botao*/
+}
+#check:checked ~ a #link_02{
+    transform: translateX(195px);       /* X significa horizontal*/
+    transition: all .5s linear;         /*velocidade do botao*/
+}
+#check:checked ~ a #link_03{
+    transform: translateY(195px);
+    transition: all .5s linear;         /*velocidade do botao*/
+}
+#check:checked ~ a #link_04{
+    transform: translateX(-195px);
+    transition: all .5s linear;         /*velocidade do botao*/
+}
+#check:checked ~ a #link_05{
+    transform: translateY(-155px) translateX(155px);
+    transition: all .5s linear;         /*velocidade do botao*/
+}

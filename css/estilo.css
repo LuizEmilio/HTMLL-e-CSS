@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:ght@2008display+swap');
+
+.bnt{
+    font-family: 'Cairo, sans-serif';
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.btn-verde{
+    background: greenyellow;
+    color: darkblue;
+    box-shadow: 0 5px 0 rgb(0, 156, 0);
+}
+.btn-lilas{
+    background: yellow;
+    color: blue;
+    box-shadow: 0 5px 0 rgb(9, 69, 231);
+}
+.btn-azul{
+    background: rgb(0, 252, 147);
+    color: rgb(154, 30, 255);
+    box-shadow: 0 5px 0 rgb(105, 243, 105);
+}
+.btn-verde:hover{
+    background: rgb(100, 100, 0);
+    color: rgb(249, 68, 255);
+    
+}
+.btn-lilas:hover{
+    background: rgb(207, 0, 0);
+    color: rgb(253, 109, 109);
+    
+}
+.btn-azul:hover{
+    background: rgb(46, 243, 177);
+    color: rgb(102, 253, 246);
+}
